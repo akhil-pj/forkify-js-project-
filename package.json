@@ -2,10 +2,10 @@
   "name": "forkify",
   "version": "1.0.0",
   "description": "recipe",
-  "default": "index.html --open",
+  "default": "index.html",
   "scripts": {
     "start": "parcel index.html",
-    "build": " npx - p parcel-bundler parcel build index.html -d ./dist --no-minify"
+    "build": " parcel build index.html --dist-dir ./dist"
   },
   "author": "akhil",
   "license": "ISC",
@@ -22,9 +22,5 @@
     "fractional": "^1.0.0",
     "regenerator-runtime": "^0.13.11",
     "sass": "^1.62.1"
-  },
-  "engines": {
-    "node": "16.x"
   }
-
 }
